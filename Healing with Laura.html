@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Healing with Laura — Reiki, Meditation &amp; Energy Healing</title>
+<meta name="description" content="Angelic Reiki, Rahanni and Violet Flame healing with Laura. 1-hour sessions from £44, in a tranquil Woolston cabin or from the comfort of your own home.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#0b080f; --ink:#f1ebf5; --mute:#9a90a3; --line:rgba(241,235,245,.13);
+  --acc:#c9a6ee; --gold:#e6c88a; --glow:rgba(201,166,238,.35); --soft:#b9afc2;
+  --serif:'Instrument Serif',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){color-scheme:light;--bg:#f7f1fa;--ink:#241a2e;--mute:#6f6479;--line:rgba(36,26,46,.14);--acc:#7b4bb0;--gold:#9a7424;--glow:rgba(123,75,176,.28);--soft:#4d4258}}
+:root[data-theme="light"]{color-scheme:light;--bg:#f7f1fa;--ink:#241a2e;--mute:#6f6479;--line:rgba(36,26,46,.14);--acc:#7b4bb0;--gold:#9a7424;--glow:rgba(123,75,176,.28);--soft:#4d4258}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--acc);color:#120a1a}
+.grain{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.06;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  animation:grain 1s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
+
+nav{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:80;display:flex;align-items:center;gap:26px;padding:10px 12px 10px 22px;border:1px solid var(--line);border-radius:100px;background:color-mix(in srgb,var(--bg) 55%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:transform .6s var(--ease);width:max-content;max-width:calc(100vw - 24px)}
+nav.hide{transform:translate(-50%,-160%)}
+.logo{font-family:var(--serif);font-size:20px;white-space:nowrap}.logo i{color:var(--acc)}
+.links{display:flex;gap:22px;font-size:13px;color:var(--mute)}.links a:hover{color:var(--ink)}
+.pill{padding:9px 18px;border-radius:100px;background:var(--ink);color:var(--bg);font-size:13px;font-weight:400;white-space:nowrap}
+@media(max-width:760px){.links{display:none}nav{gap:14px}}
+
+.btn{display:inline-flex;align-items:center;gap:12px;padding:18px 30px;border-radius:100px;font-size:15px;font-weight:400;transition:transform .5s var(--ease),box-shadow .5s}
+.btn.p{background:var(--acc);color:#16091f}.btn.p:hover{box-shadow:0 0 60px 6px var(--glow);transform:translateY(-2px)}
+.btn.g{border:1px solid var(--line)}.btn.g:hover{border-color:var(--acc)}
+.btn.xl{padding:24px 44px;font-size:18px}
+
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 5vw 9vh;overflow:hidden;isolation:isolate}
+.aurora{position:absolute;inset:-20%;z-index:-2;filter:blur(70px)}
+.aurora b{position:absolute;border-radius:50%}
+.aurora b:nth-child(1){width:50vw;height:50vw;left:5%;top:5%;background:radial-gradient(circle,rgba(150,90,210,.5),transparent 65%);animation:dr1 22s ease-in-out infinite alternate}
+.aurora b:nth-child(2){width:40vw;height:40vw;right:0;top:25%;background:radial-gradient(circle,rgba(220,130,170,.35),transparent 65%);animation:dr2 28s ease-in-out infinite alternate}
+.aurora b:nth-child(3){width:32vw;height:32vw;left:40%;bottom:-10%;background:radial-gradient(circle,rgba(230,200,138,.25),transparent 65%);animation:dr1 30s ease-in-out infinite alternate-reverse}
+@keyframes dr1{to{transform:translate(12vw,8vh) scale(1.15)}}@keyframes dr2{to{transform:translate(-14vw,-6vh) scale(.9)}}
+.lotus{position:absolute;right:6vw;top:15vh;width:min(30vw,380px);z-index:-1;animation:fl 9s ease-in-out infinite alternate;filter:drop-shadow(0 0 50px var(--glow))}
+@keyframes fl{to{transform:translateY(-18px) rotate(2deg)}}
+@media(max-width:760px){.lotus{width:56vw;top:13vh;right:-8vw;opacity:.7}}
+.ring{position:absolute;border:1px solid var(--line);border-radius:50%;z-index:-1;width:60vw;height:60vw;right:-14vw;top:-12vw}
+.eyebrow{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--acc);display:flex;align-items:center;gap:14px;margin-bottom:3vh}
+.eyebrow::before{content:"";width:40px;height:1px;background:var(--acc);flex:none}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(58px,14vw,220px);line-height:.88;letter-spacing:-.035em}
+.ln{display:block;overflow:hidden;padding-bottom:.08em}
+.ln>span{display:block;transform:translateY(112%) rotate(3deg);transform-origin:left bottom;transition:transform 1.4s var(--ease)}
+.loaded .ln>span{transform:none}.ln:nth-child(2)>span{transition-delay:.12s}
+h1 em{color:var(--acc);font-style:italic}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:6vh;flex-wrap:wrap}
+.hero-foot p{max-width:440px;color:var(--soft);font-size:clamp(15px,1.2vw,18px)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.fade{opacity:0;transform:translateY(24px);filter:blur(8px);transition:all 1.4s var(--ease) .7s}
+.loaded .fade{opacity:1;transform:none;filter:none}
+
+.label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);margin-bottom:6vh;display:block}
+.statement{padding:24vh 5vw 20vh}
+.statement p{font-family:var(--serif);font-size:clamp(32px,6vw,96px);line-height:1.05;letter-spacing:-.02em;max-width:18em}
+.w{display:inline-block;opacity:.14;filter:blur(8px);transition:opacity .5s,filter .5s;margin-right:.2em}
+.w.on{opacity:1;filter:none}.w.acc.on{color:var(--acc);font-style:italic}
+
+.hz{padding:10vh 0 14vh}
+.hz-head{padding:0 5vw;margin-bottom:6vh}
+h2{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1}
+.hz-head h2{font-size:clamp(36px,5.4vw,80px)}
+.track{display:flex;gap:5vw;padding:0 5vw 2vh;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--acc) transparent}
+.panel{flex:0 0 auto;width:min(78vw,520px);min-height:420px;scroll-snap-align:start;border-top:1px solid var(--line);padding-top:24px;display:flex;flex-direction:column;justify-content:space-between}
+.panel .n{font-family:var(--serif);font-size:clamp(110px,16vw,220px);line-height:.8;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1px var(--line);transition:all .8s var(--ease)}
+.panel:hover .n{color:var(--acc);-webkit-text-stroke-color:var(--acc);transform:translateX(10px)}
+.panel h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,52px);line-height:1}
+.panel p{color:var(--soft);margin-top:12px;font-size:15px;max-width:420px}
+
+.story{display:grid;grid-template-columns:1fr 1.1fr;gap:6vw;padding:14vh 5vw;border-top:1px solid var(--line)}
+.sticky{position:sticky;top:16vh;align-self:start}
+.story h2{font-size:clamp(44px,6.4vw,110px);line-height:.95;letter-spacing:-.03em}
+.story h2 em{color:var(--acc)}
+.story-body{display:flex;flex-direction:column;gap:5vh;padding-top:8vh;color:var(--soft);font-size:clamp(16px,1.3vw,19px);max-width:560px}
+.story-body strong{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.6vw,40px);line-height:1.12;color:var(--ink)}
+@media(max-width:860px){.story{grid-template-columns:1fr}.sticky{position:relative;top:0}.story-body{padding-top:2vh}}
+
+.price{padding:16vh 5vw;border-top:1px solid var(--line)}
+.price h2{font-size:clamp(36px,5.4vw,80px);margin-bottom:8vh}
+.row{display:grid;grid-template-columns:1.2fr 1.5fr .8fr;align-items:center;gap:3vw;padding:5vh 0;border-top:1px solid var(--line);position:relative;transition:padding .7s var(--ease)}
+.row:last-of-type{border-bottom:1px solid var(--line)}
+.row::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--glow),transparent);opacity:0;transition:opacity .6s;pointer-events:none}
+.row:hover::before{opacity:.35}.row:hover{padding-left:2vw}
+.row h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,46px);line-height:1}
+.row p{color:var(--soft);font-size:15px}.row p small{display:block;color:var(--mute);margin-top:8px;font-size:13px}
+.amt{font-family:var(--serif);font-size:clamp(64px,10vw,160px);line-height:.85;text-align:right;letter-spacing:-.04em;transition:color .5s}
+.amt sup{font-size:.4em;vertical-align:top;margin-right:.05em}.amt small{font-family:var(--sans);font-size:14px;letter-spacing:0;color:var(--mute);margin-left:4px}
+.row:hover .amt{color:var(--acc)}
+@media(max-width:760px){.row{grid-template-columns:1fr;gap:10px}.amt{text-align:left;order:-1}}
+.note{margin-top:5vh;color:var(--mute);font-size:14px}.note a{color:var(--acc);border-bottom:1px solid var(--glow)}
+
+.trust{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust>div{padding:12vh 5vw}.trust>div+div{border-left:1px solid var(--line)}
+.stat{font-family:var(--serif);font-size:clamp(90px,14vw,220px);line-height:.85;letter-spacing:-.05em;color:var(--acc)}
+.stat-l{color:var(--soft);margin-top:14px}
+.details a,.details li{list-style:none;display:block;font-family:var(--serif);font-size:clamp(26px,3.4vw,52px);line-height:1.15;letter-spacing:-.02em;color:rgba(241,235,245,.5);transition:color .4s,transform .6s var(--ease);word-break:break-word}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]) .details a{color:rgba(36,26,46,.55)}}
+.details a:hover{color:var(--acc);transform:translateX(14px)}
+.details small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin-top:3vh}
+@media(max-width:860px){.trust{grid-template-columns:1fr}.trust>div+div{border-left:0;border-top:1px solid var(--line)}.trust>div{padding:9vh 6vw}}
+
+.voices{padding:18vh 5vw;position:relative;overflow:hidden}
+.quote-big{font-family:var(--serif);font-size:clamp(28px,4.4vw,72px);line-height:1.08;letter-spacing:-.02em;max-width:19em}
+.quote-big::before{content:"“";color:var(--acc)}.quote-big::after{content:"”";color:var(--acc)}
+.who{margin-top:4vh;color:var(--mute);font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.marquee{margin:14vh -5vw 0;border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:3vh 0}
+.marquee div{display:inline-block;animation:mq 40s linear infinite;font-family:var(--serif);font-size:clamp(26px,3.6vw,54px);color:var(--line)}
+.marquee span{margin:0 2.2vw;color:var(--mute)}.marquee i{color:var(--acc);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.final{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:18vh 5vw 10vh;overflow:hidden;isolation:isolate}
+.final h2{font-size:clamp(60px,15vw,250px);line-height:.86;letter-spacing:-.045em}.final h2 em{color:var(--acc)}
+.final p{margin:5vh 0;color:var(--soft);max-width:460px}
+.tel{margin-top:4vh;font-family:var(--serif);font-size:clamp(26px,3vw,44px)}.tel:hover{color:var(--acc)}
+.mail{margin-top:1vh;color:var(--mute);font-size:15px}.mail:hover{color:var(--ink)}
+footer{padding:6vh 5vw 5vh;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);color:var(--mute);font-size:13px}
+.support{width:100%;font-size:12px;color:var(--mute);max-width:640px;opacity:.85}
+.reveal{opacity:0;transform:translateY(50px);filter:blur(10px);transition:all 1.2s var(--ease)}.reveal.in{opacity:1;transform:none;filter:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}html{scroll-behavior:auto}.ln>span,.fade,.reveal{transform:none!important;opacity:1!important;filter:none!important}.w{opacity:1;filter:none}}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<nav id="nav">
+  <a href="#top" class="logo">Healing with <i>Laura</i></a>
+  <div class="links"><a href="#work">Healing</a><a href="#story">Story</a><a href="#fees">Sessions</a><a href="#contact">Contact</a></div>
+  <a class="pill" href="#start">Book a session</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="aurora"><b></b><b></b><b></b></div>
+  <div class="ring"></div>
+  <svg class="lotus" viewBox="0 0 300 260" aria-hidden="true">
+    <defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6c88a"/><stop offset=".5" stop-color="#c9a6ee"/><stop offset="1" stop-color="#6b3fa0"/></linearGradient></defs>
+    <g fill="none" stroke="url(#lg)" stroke-width="2.4" stroke-linejoin="round">
+      <path d="M150 220 C112 180 112 100 150 40 C188 100 188 180 150 220Z"/>
+      <path d="M150 220 C100 196 70 140 62 86 C110 104 142 150 150 220Z"/>
+      <path d="M150 220 C200 196 230 140 238 86 C190 104 158 150 150 220Z"/>
+      <path d="M150 222 C96 218 44 188 16 140 C66 140 124 170 150 222Z" opacity=".8"/>
+      <path d="M150 222 C204 218 256 188 284 140 C234 140 176 170 150 222Z" opacity=".8"/>
+    </g>
+    <path d="M60 240 Q150 226 240 240" fill="none" stroke="url(#lg)" stroke-width="2" opacity=".6"/>
+  </svg>
+
+  <span class="eyebrow fade">Reiki &amp; energy healing · Woolston cabin or at home</span>
+  <h1 aria-label="Rebalance. Breathe. Restore.">
+    <span class="ln"><span>Ready to</span></span>
+    <span class="ln"><span><em>rebalance?</em></span></span>
+  </h1>
+  <div class="hero-foot">
+    <p class="fade">Gentle Angelic Reiki, Rahanni and Violet Flame healing with Laura — a calm, safe space to unwind, whether in our tranquil cabin or from the comfort of your own home.</p>
+    <div class="cta-row fade">
+      <a class="btn p" href="#start">Book a 1-hour session →</a>
+      <a class="btn g" href="tel:+447972508062">+44 7972 508062</a>
+    </div>
+  </div>
+</header>
+
+<section class="statement">
+  <span class="label">( 01 — A moment for you )</span>
+  <p id="stmt">Reiki might surprise you. It isn’t just lying on a table — <span class="acc">it’s a quiet hour to meet yourself again.</span></p>
+</section>
+
+<section class="hz" id="work">
+  <div class="hz-head"><span class="label" style="margin-bottom:2vh">( 02 — The healing )</span><h2>What’s in your<br>session</h2></div>
+  <div class="track">
+    <article class="panel"><div class="n">01</div><div><h3>Guided meditation</h3><p>Ten minutes to settle your breath and calm a busy mind before the healing begins.</p></div></article>
+    <article class="panel"><div class="n">02</div><div><h3>Angelic Reiki</h3><p>Part of a forty-minute blend of gentle, hands-on-or-near energy healing, held in a peaceful, unhurried space.</p></div></article>
+    <article class="panel"><div class="n">03</div><div><h3>Rahanni &amp; Violet Flame</h3><p>Rahanni and Violet Flame healing woven into the same forty minutes, for a deeply relaxing experience.</p></div></article>
+    <article class="panel"><div class="n">04</div><div><h3>Grounding</h3><p>A slow, steady return to the room, so you leave feeling centred and present.</p></div></article>
+    <article class="panel"><div class="n">05</div><div><h3>Tarot &amp; reflexology</h3><p>Add a personalised tarot reading or a relaxing reflexology session in our two-person Sanctuary package.</p></div></article>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="sticky">
+    <span class="label">( 03 — Laura’s story )</span>
+    <h2>Born from<br>my own <em>healing.</em></h2>
+  </div>
+  <div class="story-body">
+    <p class="reveal"><strong>“Five years ago, my life changed drastically.”</strong></p>
+    <p class="reveal">Laura became unwell with Long COVID, and a cascade of chronic conditions followed. Most days she was bedridden, and she lost her long career in the care industry, supporting children with brain injuries.</p>
+    <p class="reveal">She waited months for healthcare, and the medications she was given brought further difficulties. Her mental health suffered too.</p>
+    <p class="reveal">Those years of caring for vulnerable people shaped the practitioner she is today — with deep empathy, patience and listening — and led her into her calling as a Reiki healer.</p>
+  </div>
+</section>
+
+<section class="price" id="fees">
+  <span class="label">( 04 — Sessions )</span>
+  <h2>Simple,<br>honest pricing.</h2>
+  <div class="row reveal"><div><h3>Reiki rebalance</h3></div><p>1 hour: 10-min guided meditation, 40-min Angelic Reiki, Rahanni &amp; Violet Flame healing, and grounding. Woolston cabin or in your own home.</p><div class="amt"><sup>£</sup>44</div></div>
+  <div class="row reveal"><div><h3>The Sanctuary for Two</h3></div><p>Two hours, two practitioners. Reiki plus a personalised tarot reading <em>or</em> a relaxing reflexology session, with sage clearing and guided meditation.<small>November deal · Trinity Retreats</small></p><div class="amt"><sup>£</sup>66<small>per person</small></div></div>
+  <p class="note">Message today to secure your session — <a href="tel:+447972508062">+44 7972 508062</a> or <a href="mailto:healingwithlaura@outlook.com">email Laura</a>.</p>
+</section>
+
+<section class="trust" id="contact">
+  <div>
+    <span class="label">( 05 — Kind words )</span>
+    <div class="stat">100%</div>
+    <p class="stat-l">of reviewers recommend Healing with Laura (5 reviews)</p>
+  </div>
+  <div class="details">
+    <span class="label">( 06 — Get in touch )</span>
+    <a href="tel:+447972508062">+44 7972 508062</a>
+    <a href="mailto:healingwithlaura@outlook.com">healingwithlaura@outlook.com</a>
+    <small>Woolston cabin · PO14 4FG · or at home</small>
+  </div>
+</section>
+
+<section class="voices">
+  <span class="label">( 07 — Voices )</span>
+  <div class="quote-big">It immediately gave me a feeling of ease. I felt very safe — could have chatted to you for ages afterwards.</div>
+  <div class="who">— Client review</div>
+  <div class="marquee"><div>
+    <span>Angelic Reiki</span><i>✦</i><span>Rahanni</span><i>✦</i><span>Violet Flame</span><i>✦</i><span>Meditation</span><i>✦</i><span>Grounding</span><i>✦</i>
+    <span>Angelic Reiki</span><i>✦</i><span>Rahanni</span><i>✦</i><span>Violet Flame</span><i>✦</i><span>Meditation</span><i>✦</i><span>Grounding</span><i>✦</i>
+  </div></div>
+</section>
+
+<section class="final" id="start">
+  <div class="aurora"><b></b><b></b><b></b></div>
+  <span class="label">( 08 — Begin )</span>
+  <h2>Give yourself<br>the <em>gift.</em></h2>
+  <p>Pure relaxation, a calm mind and a safe space to unwind. Message Laura today.</p>
+  <a class="btn p xl" href="mailto:healingwithlaura@outlook.com?subject=Reiki%20session%20enquiry">Secure your session →</a>
+  <a class="tel" href="tel:+447972508062">+44 7972 508062</a>
+  <a class="mail" href="mailto:healingwithlaura@outlook.com">healingwithlaura@outlook.com</a>
+</section>
+
+<footer>
+  <span>© 2026 Healing with Laura · Reiki &amp; energy healing</span>
+  <a href="#top">Back to top ↑</a>
+  <p class="support">Reiki is a complementary, relaxation-based practice and is not a substitute for medical advice, diagnosis or treatment. Please continue to see your GP or healthcare provider for any medical concerns.</p>
+</footer>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+requestAnimationFrame(()=>setTimeout(()=>document.body.classList.add('loaded'),150));
+const st=$('#stmt');
+st.innerHTML=st.innerHTML.replace(/(<span class="acc">)([\s\S]*?)(<\/span>)|([^<\s]+)/g,(m,a,b,c,d)=>{
+  if(a)return b.trim().split(/\s+/).map(w=>`<span class="w acc">${w}</span>`).join(' ')+' ';
+  return d?`<span class="w">${d}</span> `:m});
+const words=$$('.w'),nav=$('#nav');let lastY=0,tick=false;
+function onScroll(){
+  const y=scrollY;nav.classList.toggle('hide',y>lastY&&y>200);lastY=y;
+  const t=innerHeight*.85;words.forEach(w=>w.classList.toggle('on',w.getBoundingClientRect().top<t));
+  tick=false;
+}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});
+onScroll();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2});
+$$('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3)*.08+'s';io.observe(el)});
+})();
+</script>
+</body>
+</html>
